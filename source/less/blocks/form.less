@@ -1,0 +1,21 @@
+.form__input {
+  font-size: 14px;
+  line-height: 17px;
+  color: @darker;
+  background-color: @white;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 15px;
+  border: 1px solid rgba(@dark-rgb, 0.3);
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: @darker;
+  }
+}
