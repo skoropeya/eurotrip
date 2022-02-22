@@ -3,4 +3,23 @@
   font-size: 18px;
   line-height: 32px;
   color: @darker;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  &--contacts {
+    margin-bottom: 25px;
+  }
+}
+
+.page-footer__box {
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid @icon;
+  }
 }

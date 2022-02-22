@@ -1,13 +1,38 @@
+.contacts {
+  margin-bottom: 60px;
+}
+
 .contacts__email {
+  display: block;
+  margin-bottom: 21px;
   font-size: 14px;
   line-height: 17px;
   color: @accent;
   text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken(@accent, 20%);
+  }
 }
 
 .contacts__phone {
+  display: block;
   font-size: 16px;
   line-height: 32px;
   text-decoration: underline;
   color: @accent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: @accent-hover;
+  }
+}
+
+.contacts__icon {
+  color: @icon;
+  margin-right: 15px;
+  vertical-align: middle;
 }

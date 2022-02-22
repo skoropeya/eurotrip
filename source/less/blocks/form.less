@@ -1,3 +1,25 @@
+.form__wrapper {
+  margin-bottom: 20px;
+
+  &--phone {
+    position: relative;
+  }
+}
+
+.form__asterisk {
+  position: absolute;
+  left: 15px;
+  top: 6px;
+  color: @accent;
+}
+
+.form__prefix {
+  position: absolute;
+  left: 25px;
+  top: 11px;
+  color: @darker;
+}
+
 .form__input {
   font-size: 14px;
   line-height: 17px;
@@ -18,4 +40,12 @@
     opacity: 1;
     color: @darker;
   }
+
+  &--phone {
+    padding-left: 51px;
+  }
+}
+
+.form__submit {
+  width: 100%;
 }

@@ -1,19 +1,8 @@
-.tarrif {
+.tarrif__card {
+  box-sizing: border-box;
+  padding: 30px 20px;
   border: 1px solid rgba(@dark-rgb, 0.3);
-  border-radius: 6px;
-
-  &:hover {
-    border: 3px solid @accent;
-
-    .tarrif__title {
-      line-height: 34px;
-      color: @accent;
-    }
-
-    .tarrif__price {
-      color: @accent;
-    }
-  }
+  border-radius: 6px 6px 0 0;
 }
 
 .tarrif__title {
@@ -22,6 +11,8 @@
   line-height: 38px;
   letter-spacing: -1.3px;
   color: rgba(@darker-rgb, 0.7);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .tarrif__price {
@@ -29,10 +20,23 @@
   font-size: 25px;
   line-height: 34px;
   color: rgba(@darker-rgb, 0.7);
+  margin-top: 0;
+  margin-bottom: 11px;
 }
 
 .tarrif__leading {
   line-height: 24px;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(@dark-rgb, 0.3);
+  }
 }
 
 .tarrif__options-list {
@@ -40,4 +44,39 @@
   margin: 0;
   list-style: none;
   line-height: 32px;
+  text-align: left;
+}
+
+.tarrif__option {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.tarrif__option-icon {
+  margin-right: 16px;
+  color: @accent;
+}
+
+.tarrif:hover,
+.tarrif:focus,
+.tarrif:active {
+  .tarrif__card {
+    padding-left: 18px;
+    padding-right: 18px;
+    border: 3px solid @accent;
+  }
+
+  .tarrif__title {
+    line-height: 34px;
+    color: @accent;
+  }
+
+  .tarrif__price {
+    color: @accent;
+  }
+
+  .tarrif__option-icon {
+    color: @darker;
+  }
 }

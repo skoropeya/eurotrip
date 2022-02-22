@@ -1,6 +1,20 @@
+.price {
+  margin-bottom: 50px;
+}
+
+.price__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.price__box {
+  margin-bottom: 40px;
+}
+
 .price__leading {
   line-height: 27px;
   color: rgba(@dark-rgb, 0.7);
+  margin-bottom: 20px;
 }
 
 .price__contact-us {
@@ -8,6 +22,7 @@
   font-size: 18px;
   line-height: 34px;
   color: @darker;
+  margin-bottom: 10px;
 }
 
 .price__phone {
@@ -15,10 +30,22 @@
   line-height: 32px;
   text-decoration: underline;
   color: @accent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken(@accent, 20%);
+  }
 }
 
 .price__tariffs-list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.price__tariffs-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

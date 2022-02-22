@@ -1,5 +1,20 @@
-.promo__title {
+.promo {
+  margin-bottom: 80px;
+}
+
+.promo__title-box {
+  padding-top: 81px;
+  padding-bottom: 82px;
+  margin-bottom: 20px;
   background-color: @dark-back;
+  background-image: url("../img/back/promo-back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__title {
+  margin: 0;
 }
 
 .promo__leading {
@@ -7,4 +22,19 @@
   font-size: 16px;
   line-height: 27px;
   letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.promo__link {
+  display: flex;
+  justify-content: space-around;
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/icon/arrow-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
