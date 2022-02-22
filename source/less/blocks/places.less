@@ -1,5 +1,9 @@
 .places {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 95px;
+  }
 }
 
 .places__title {
@@ -11,6 +15,11 @@
   margin-bottom: 20px;
   letter-spacing: -0.5px;
   color: rgba(@dark-rgb, 0.7);
+
+  @media (min-width: @tablet-width) {
+    width: 345px;
+    margin: 0 auto 40px;
+  }
 }
 
 .places__list {
@@ -24,6 +33,12 @@
 
 .places__item {
   &:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
   }
 }

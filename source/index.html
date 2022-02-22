@@ -358,26 +358,28 @@
 
     <section class="feedback">
       <div class="feedback__wrapper container">
-        <h2 class="feedback__title heading-primary heading-primary--dark">У Вас остались вопросы?</h2>
-        <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <div class="feedback__box">
+          <h2 class="feedback__title heading-primary heading-primary--dark">У Вас остались вопросы?</h2>
+          <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
 
-        <form class="feedback__form form form--contacts" method="post">
-          <div class="form__wrapper form__wrapper--phone">
-            <span class="form__asterisk">*</span>
-            <span class="form__prefix">+7</span>
-            <label class="visually-hidden" for="user-phone">Укажите телефон для связи</label>
-            <input class="form__input form__input--phone" type="tel" name="user-phone" id="user-phone"
-              placeholder="Введите 10 цифр номера" required>
-          </div>
+          <form class="feedback__form form form--contacts" method="post">
+            <div class="form__wrapper form__wrapper--phone">
+              <span class="form__asterisk">*</span>
+              <span class="form__prefix">+7</span>
+              <label class="visually-hidden" for="user-phone">Укажите телефон для связи</label>
+              <input class="form__input form__input--phone" type="tel" name="user-phone" id="user-phone"
+                placeholder="Введите 10 цифр номера" required>
+            </div>
 
-          <div class="form__wrapper">
-            <label class="visually-hidden" for="user-email">Укажите e-mail для связи</label>
-            <input class="form__input form__input--email" type="email" name="user-email" id="user-email"
-              placeholder="E-mail">
-          </div>
+            <div class="form__wrapper">
+              <label class="visually-hidden" for="user-email">Укажите e-mail для связи</label>
+              <input class="form__input form__input--email" type="email" name="user-email" id="user-email"
+                placeholder="E-mail">
+            </div>
 
-          <button class="form__submit button" type="submit">Отправить</button>
-        </form>
+            <button class="form__submit button" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -421,7 +423,6 @@
         </button>
       </div>
     </section>
-
   </main>
 
   <footer class="page-footer">
@@ -470,7 +471,7 @@
       </div>
 
       <div class="page-footer__box corporate">
-        <h2 class="page-footer__title">Корпоративные путешествия</h2>
+        <h2 class="page-footer__title page-footer__title--corporate">Корпоративные путешествия</h2>
         <p class="corporate__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры
           очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
           времяпрепровождением</p>

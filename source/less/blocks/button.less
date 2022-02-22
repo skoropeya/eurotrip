@@ -1,6 +1,7 @@
 .button {
   display: block;
   border: none;
+  box-sizing: border-box;
   padding: 19px;
   font-weight: 500;
   font-size: 10px;
@@ -16,5 +17,9 @@
   &:focus,
   &active {
     background-color: @accent-hover;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
   }
 }

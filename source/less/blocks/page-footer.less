@@ -1,25 +1,27 @@
+.page-footer__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .page-footer__title {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
   color: @darker;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 
   &--contacts {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
+  }
+
+  &--corporate {
+    margin-bottom: 19px;
   }
 }
 
 .page-footer__box {
   position: relative;
-
-  &:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid @icon;
-  }
 }

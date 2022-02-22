@@ -1,8 +1,12 @@
 .form__wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   &--phone {
     position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 269px;
   }
 }
 
@@ -48,4 +52,9 @@
 
 .form__submit {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    margin: 0 auto;
+  }
 }

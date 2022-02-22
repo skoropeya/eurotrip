@@ -1,5 +1,20 @@
 .contacts {
-  margin-bottom: 60px;
+  margin-bottom: 57px;
+
+  @media (max-width: @only-mobile-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -26px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid @icon;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+  }
 }
 
 .contacts__email {

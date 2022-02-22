@@ -13,7 +13,7 @@
 
   &--greece {
     .slider__quote-box {
-      background-image: url("../img/back/Greece-mobile.jpg");
+      background-image: url("../img/back/greece-mobile.jpg");
     }
   }
 
@@ -47,6 +47,12 @@
   padding-left: 16px;
   padding-right: 16px;
   max-width: 100%;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
 }
 
 .slider__title {
@@ -55,15 +61,19 @@
 }
 
 .slider__description {
+  letter-spacing: -0.4px;
   color: rgba(@dark-rgb, 0.7);
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .slider__buy {
-  box-sizing: border-box;
   width: 288px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
 }
 
 .slider__quote-box {
@@ -74,10 +84,48 @@
   height: 415px;
 }
 
+@media (min-width: @tablet-width) {
+  .slider__item {
+    &--greece {
+      .slider__quote-box {
+        background-image: url("../img/back/greece-tablet.jpg");
+      }
+    }
+
+    &--albania {
+      .slider__quote-box {
+        background-image: url("../img/back/albania.jpg");
+      }
+    }
+
+    &--macedonia {
+      .slider__quote-box {
+        background-image: url("../img/back/macedonia.jpg");
+      }
+    }
+
+    &--montenegro {
+      .slider__quote-box {
+        background-image: url("../img/back/montenegro.jpg");
+      }
+    }
+
+    &--croatia {
+      .slider__quote-box {
+        background-image: url("../img/back/croatia.jpg");
+      }
+    }
+  }
+}
+
 .slider__quote {
   margin: 0;
   position: absolute;
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    top: 80px;
+  }
 }
