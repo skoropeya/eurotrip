@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0 140px;
+  }
 }
 
 .slider__item {
@@ -14,30 +19,50 @@
   &--greece {
     .slider__quote-box {
       background-image: url("../img/back/greece-mobile.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back/greece-mobile@2x.jpg");
+      }
     }
   }
 
   &--albania {
     .slider__quote-box {
       background-image: url("../img/back/albania.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back/albania@2x.jpg");
+      }
     }
   }
 
   &--macedonia {
     .slider__quote-box {
       background-image: url("../img/back/macedonia.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back/macedonia@2x.jpg");
+      }
     }
   }
 
   &--montenegro {
     .slider__quote-box {
       background-image: url("../img/back/montenegro.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back/montenegro@2x.jpg");
+      }
     }
   }
 
   &--croatia {
     .slider__quote-box {
       background-image: url("../img/back/croatia.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back/croatia@2x.jpg");
+      }
     }
   }
 }
@@ -89,30 +114,10 @@
     &--greece {
       .slider__quote-box {
         background-image: url("../img/back/greece-tablet.jpg");
-      }
-    }
 
-    &--albania {
-      .slider__quote-box {
-        background-image: url("../img/back/albania.jpg");
-      }
-    }
-
-    &--macedonia {
-      .slider__quote-box {
-        background-image: url("../img/back/macedonia.jpg");
-      }
-    }
-
-    &--montenegro {
-      .slider__quote-box {
-        background-image: url("../img/back/montenegro.jpg");
-      }
-    }
-
-    &--croatia {
-      .slider__quote-box {
-        background-image: url("../img/back/croatia.jpg");
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/back/greece-tablet@2x.jpg");
+        }
       }
     }
   }

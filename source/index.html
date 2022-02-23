@@ -46,7 +46,12 @@
               </a>
             </li>
             <li class="main-nav__item main-nav__item--phone">
-              <a class="main-nav__link" href="tel:+749978468446">+7 (499) -784-684-46</a>
+              <a class="main-nav__link" href="tel:+749978468446">
+                <svg class="main-nav__icon main-nav__icon--phone" width="17" height="24">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span>+7 (499) -784-684-46</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -78,8 +83,13 @@
       <ul class="places__list">
         <li class="places__item place-card">
           <a class="place-card__link" href="#greece">
-            <img class="place-card__img" src="img/Greece-mobile.jpg" width="288" height="425"
-              alt="Монастырь Метеоры на скале">
+            <picture>
+              <source type="image/webp" media="(min-width: 1450px)" srcset="img/Greece-desktop.webp 1x, img/Greece-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/Greece-mobile.webp 1x, img/Greece-mobile@2x.webp 2x">
+              <source media="(min-width: 1450px)" srcset="img/Greece-desktop.jpg 1x, img/Greece-desktop@2x.jpg 2x">
+              <img class="place-card__img" src="img/Greece-mobile.jpg" srcset="img/Greece-mobile@2x.jpg 2x" width="288" height="425"
+                alt="Монастырь Метеоры на скале">
+            </picture>
             <span class="place-card__country">Греция</span>
             <span class="place-card__overlay"></span>
             <span class="place-card__see-more">Смотреть подробнее</span>
@@ -87,8 +97,13 @@
         </li>
         <li class="places__item place-card">
           <a class="place-card__link" href="#albania">
-            <img class="place-card__img" src="img/Albania-mobile.jpg" width="288" height="425"
-              alt="Фото пляжа с высоты">
+            <picture>
+                <source type="image/webp" media="(min-width: 1450px)" srcset="img/Albania-desktop.webp 1x, img/Albania-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="img/Albania-mobile.webp 1x, img/Albania-mobile@2x.webp 2x">
+                <source media="(min-width: 1450px)" srcset="img/Albania-desktop.jpg 1x, img/Albania-desktop@2x.jpg 2x">
+                <img class="place-card__img" src="img/Albania-mobile.jpg" srcset="img/Albania-mobile@2x.jpg 2x" width="288" height="425"
+                  alt="Фото пляжа с высоты">
+            </picture>
             <span class="place-card__country">Албания</span>
             <span class="place-card__overlay"></span>
             <span class="place-card__see-more">Смотреть подробнее</span>
@@ -96,8 +111,13 @@
         </li>
         <li class="places__item place-card">
           <a class="place-card__link" href="#macedonia">
-            <img class="place-card__img" src="img/Macedonia-mobile.jpg" width="288" height="425"
-              alt="Замок на горе с видом на море">
+            <picture>
+              <source type="image/webp" media="(min-width: 1450px)" srcset="img/Macedonia-desktop.webp 1x, img/Macedonia-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/Macedonia-mobile.webp 1x, img/Macedonia-mobile@2x.webp 2x">
+              <source media="(min-width: 1450px)" srcset="img/Macedonia-desktop.jpg 1x, img/Macedonia-desktop@2x.jpg 2x">
+              <img class="place-card__img" src="img/Macedonia-mobile.jpg" srcset="img/Macedonia-mobile@2x.jpg 2x" width="288" height="425"
+                alt="Замок на горе с видом на море">
+            </picture>
             <span class="place-card__country">Македония</span>
             <span class="place-card__overlay"></span>
             <span class="place-card__see-more">Смотреть подробнее</span>
@@ -105,7 +125,13 @@
         </li>
         <li class="places__item place-card">
           <a class="place-card__link" href="#montenegro">
-            <img class="place-card__img" src="img/Montenegro-mobile.jpg" width="288" height="425" alt="Голубая река">
+            <picture>
+              <source type="image/webp" media="(min-width: 1450px)" srcset="img/Montenegro-desktop.webp 1x, img/Montenegro-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/Montenegro-mobile.webp 1x, img/Montenegro-mobile@2x.webp 2x">
+              <source media="(min-width: 1450px)" srcset="img/Montenegro-desktop.jpg 1x, img/Montenegro-desktop@2x.jpg 2x">
+              <img class="place-card__img" src="img/Montenegro-mobile.jpg" srcset="img/Montenegro-mobile@2x.jpg 2x" width="288" height="425"
+                alt="Голубая река">
+            </picture>
             <span class="place-card__country">Черногория</span>
             <span class="place-card__overlay"></span>
             <span class="place-card__see-more">Смотреть подробнее</span>
@@ -113,7 +139,13 @@
         </li>
         <li class="places__item place-card">
           <a class="place-card__link" href="#croatia">
-            <img class="place-card__img" src="img/Croatia-mobile.jpg" width="288" height="425" alt="Пещера">
+            <picture>
+              <source type="image/webp" media="(min-width: 1450px)" srcset="img/Croatia-desktop.webp 1x, img/Croatia-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/Croatia-mobile.webp 1x, img/Croatia-mobile@2x.webp 2x">
+              <source media="(min-width: 1450px)" srcset="img/Croatia-desktop.jpg 1x, img/Croatia-desktop@2x.jpg 2x">
+              <img class="place-card__img" src="img/Croatia-mobile.jpg" srcset="img/Croatia-mobile@2x.jpg 2x" width="288" height="425"
+                alt="Пещера">
+            </picture>
             <span class="place-card__country">Хорватия</span>
             <span class="place-card__overlay"></span>
             <span class="place-card__see-more">Смотреть подробнее</span>
@@ -146,7 +178,7 @@
         </div>
       </div>
 
-        <ul class="countries__list slider">
+      <ul class="countries__list slider">
           <li class="countries__item slider__item slider__item--greece slider__item--current">
             <div class="slider__text-box">
               <h3 class="slider__title heading-primary">Греция</h3>
@@ -165,7 +197,10 @@
                   высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как
                   будто стоишь на краю света!</p>
                 <div class="quote__user">
-                  <img class="quote__avatar" src="img/avatars/vlada.jpg" width="38" height="38" alt="Аватар пользователя">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatars/vlada.webp">
+                    <img class="quote__avatar" src="img/avatars/vlada.jpg" width="38" height="38" alt="Аватар пользователя">
+                  </picture>
                   <cite class="quote__name">Влада Голицина</cite>
                 </div>
               </blockquote>
@@ -188,7 +223,10 @@
                 <p class="quote__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой
                   сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
                 <div class="quote__user">
-                  <img class="quote__avatar" src="img/avatars/marishka.jpg" width="38" height="38" alt="Аватар пользователя">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatars/marishka.webp">
+                    <img class="quote__avatar" src="img/avatars/marishka.jpg" width="38" height="38" alt="Аватар пользователя">
+                  </picture>
                   <cite class="quote__name">Маришка</cite>
                 </div>
               </blockquote>
@@ -212,7 +250,10 @@
                   гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно
                   после долгого пути в гору.</p>
                 <div class="quote__user">
-                  <img class="quote__avatar" src="img/avatars/michail.jpg" width="38" height="38" alt="Аватар пользователя">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatars/michail.webp">
+                    <img class="quote__avatar" src="img/avatars/michail.jpg" width="38" height="38" alt="Аватар пользователя">
+                  </picture>
                   <cite class="quote__name">Михаил Кузьмин</cite>
                 </div>
               </blockquote>
@@ -234,7 +275,10 @@
                 <p class="quote__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в
                   фильмах :) Всем советую</p>
                 <div class="quote__user">
-                  <img class="quote__avatar" src="img/avatars/anastasia.jpg" width="38" height="38" alt="Аватар пользователя">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatars/anastasia.webp">
+                    <img class="quote__avatar" src="img/avatars/anastasia.jpg" width="38" height="38" alt="Аватар пользователя">
+                  </picture>
                   <cite class="quote__name">Анастасия Мей</cite>
                 </div>
               </blockquote>
@@ -257,13 +301,16 @@
                   что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с
                   чем не спутать по итогу :)</p>
                 <div class="quote__user">
-                  <img class="quote__avatar" src="img/avatars/vladimir.jpg" width="38" height="38" alt="Аватар пользователя">
+                  <picture>
+                    <source type="image/webp" srcset="img/avatars/vladimir.webp">
+                    <img class="quote__avatar" src="img/avatars/vladimir.jpg" width="38" height="38" alt="Аватар пользователя">
+                  </picture>
                   <cite class="quote__name">Владимир Мулицин</cite>
                 </div>
               </blockquote>
             </div>
           </li>
-        </ul>
+      </ul>
     </section>
 
     <section class="price">
@@ -392,7 +439,7 @@
           <button class="modal-buy__close close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
           </button>
-          <form class="feedback__form form form--buy" method="post">
+          <form class="modal-buy__form form form--buy" method="post">
             <div class="form__wrapper form__wrapper--phone">
               <span class="form__asterisk">*</span>
               <span class="form__prefix">+7</span>
@@ -407,7 +454,7 @@
                 placeholder="E-mail">
             </div>
 
-            <button class="form__submit button" type="submit">Отправить</button>
+            <button class="form__submit form__submit--buy button" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -427,7 +474,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
-      <div class="page-footer__box next-trips">
+      <div class="page-footer__box page-footer__box--trips next-trips">
         <h2 class="page-footer__title">Следующие путешествия</h2>
         <div class="next-trips__wrapper">
           <ul class="next-trips__list">
@@ -454,7 +501,7 @@
         </div>
       </div>
 
-      <div class="page-footer__box contacts">
+      <div class="page-footer__box page-footer__box--contacts contacts">
         <h2 class="page-footer__title page-footer__title--contacts">Наши контакты</h2>
         <a class="contacts__email" href="mailto:">
           <svg class="contacts__icon contacts__icon--envelope" width="26" height="20">
@@ -470,7 +517,7 @@
         </a>
       </div>
 
-      <div class="page-footer__box corporate">
+      <div class="page-footer__box page-footer__box--corporate corporate">
         <h2 class="page-footer__title page-footer__title--corporate">Корпоративные путешествия</h2>
         <p class="corporate__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры
           очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным

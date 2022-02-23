@@ -6,6 +6,18 @@
   &--opened {
     display: block;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 334px;
+    background-image: url("../img/back/modal.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 334px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back/modal@2x.jpg");
+    }
+  }
 }
 
 .modal-buy__title {
@@ -17,5 +29,13 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 45px;
+  }
+}
+
+.modal-buy__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -6,6 +6,10 @@
   padding-left: 16px;
   padding-right: 16px;
   max-width: 100%;
+
+  @media (min-width: @desktop-width) {
+    .limiter;
+  }
 }
 
 .countries__toggles {
@@ -62,4 +66,8 @@
   &:not(:last-child) {
     margin-right: 99px;
   }
+}
+
+.countries__list {
+  .limiter;
 }

@@ -3,6 +3,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 74px;
+  }
 }
 
 .page-footer__title {
@@ -24,4 +28,40 @@
 
 .page-footer__box {
   position: relative;
+
+  &--trips {
+    margin-bottom: 40px;
+  }
+
+  &--contacts {
+    margin-bottom: 57px;
+  }
+
+  &--corporate {
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--trips {
+      margin-bottom: 30px;
+    }
+
+    &--contacts {
+      margin-bottom: 30px;
+    }
+
+    &--corporate {
+      margin-bottom: 54px;
+      padding-top: 30px;
+      border-top: 1px solid @icon;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    &--corporate {
+      border: none;
+    }
+  }
 }

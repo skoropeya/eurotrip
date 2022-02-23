@@ -1,9 +1,16 @@
 .corporate {
-  margin-bottom: 26px;
+  @media (min-width: @desktop-width) {
+    padding-left: 55px;
+  }
 }
 
 .corporate__text {
   font-size: 14px;
   line-height: 24px;
   color: rgba(@darker-rgb, 0.5);
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    max-width: 320px;
+  }
 }

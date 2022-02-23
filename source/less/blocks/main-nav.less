@@ -108,3 +108,26 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: @darker;
+    background-color: transparent;
+  }
+
+  .main-nav__icon {
+    display: none;
+  }
+
+  .main-nav__icon--phone {
+    display: inline-block;
+  }
+}

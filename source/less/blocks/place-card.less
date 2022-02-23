@@ -2,6 +2,12 @@
   display: block;
   width: 288px;
   height: 425px;
+  object-fit: contain;
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+    height: 430px;
+  }
 }
 
 .place-card__country {
@@ -30,6 +36,11 @@
   left: 0;
   background-color: @darker;
   opacity: 0.6;
+
+  @media (min-width: @desktop-width) {
+    width: 350px;
+    height: 430px;
+  }
 }
 
 .place-card__see-more {

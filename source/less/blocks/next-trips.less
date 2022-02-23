@@ -1,6 +1,4 @@
 .next-trips {
-  margin-bottom: 40px;
-
   @media (max-width: @only-mobile-width) {
     &::after {
       content: "";
@@ -32,6 +30,10 @@
   line-height: 17px;
   color: rgba(@darker-rgb, 0.5);
   width: 134px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .next-trips__item {
